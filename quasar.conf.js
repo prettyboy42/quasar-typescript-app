@@ -61,13 +61,24 @@ module.exports = function(ctx) {
         'QFooter',
         'QAvatar',
         'QSpace',
-        'QBtnDropdown'
+        'QBtnDropdown',
+        'QCard',
+        'QCardSection',
+        'QCardActions',
+        'QBtnGroup',
+        'QExpansionItem',
+        'QSeparator',
+        'QImg'
       ],
 
       directives: ['Ripple'],
 
       // Quasar plugins
-      plugins: []
+      plugins: ['AppFullscreen'],
+
+      config: {
+        dark: 'auto'
+      }
     },
 
     // https://quasar.dev/quasar-cli/cli-documentation/supporting-ie
