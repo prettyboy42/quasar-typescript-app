@@ -71,7 +71,7 @@ module.exports = function(ctx) {
         'QImg'
       ],
 
-      directives: ['Ripple'],
+      directives: ['Ripple', 'ClosePopup'],
 
       // Quasar plugins
       plugins: ['AppFullscreen'],

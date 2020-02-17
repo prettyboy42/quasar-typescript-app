@@ -1,14 +1,11 @@
 <template>
-  <q-drawer v-model="leftDrawerOpen" show-if-above bordered :width="250" :breakpoint="400">
-    <q-img class="absolute-top" src="https://cdn.quasar.dev/img/material.png" style="height: 150px">
-      <div class="absolute-bottom bg-transparent">
-        <q-avatar size="56px" class="q-mb-sm">
-          <img src="https://cdn.quasar.dev/img/boy-avatar.png" />
-        </q-avatar>
-        <div class="text-weight-bold">Tam Nguyen Duc</div>
-        <div>@tamnd2</div>
-      </div>
-    </q-img>
+  <q-drawer
+    v-model="leftDrawerOpen"
+    :show-if-above="false"
+    bordered
+    :width="250"
+    :overlay="$q.platform.is.mobile||false"
+  >
     <t-menu :essentialLinks="essentialLinks"></t-menu>
 
     <!-- <q-list>
